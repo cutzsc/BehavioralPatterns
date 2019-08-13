@@ -10,7 +10,14 @@ namespace State
 	{
 		static void Main(string[] args)
 		{
+			Water water = new Water(WaterState.Gas);
 
+			water.Heat();
+			water.Frost();
+			water.Heat();
+			water.Frost();
+			water.Frost();
+			water.Frost();
 
 			Console.ReadLine();
 		}
