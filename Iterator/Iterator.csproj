@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IItemIterator.cs" />
+    <Compile Include="IItemNumerable.cs" />
+    <Compile Include="Inventory.cs" />
+    <Compile Include="InventoryNumerator.cs" />
+    <Compile Include="Item.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -10,6 +10,16 @@ namespace Iterator
 	{
 		static void Main(string[] args)
 		{
+			Inventory inv = new Inventory(5);
+
+			IItemIterator iterator = inv.CreateNumerator();
+			while (iterator.HasNext())
+			{
+				Item item = iterator.Next();
+				Console.WriteLine(item.name);
+			}
+
+			Console.ReadLine();
 		}
 	}
 }
